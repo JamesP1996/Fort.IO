@@ -1,0 +1,69 @@
+
+.homebg{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: aliceblue;
+background-image: url('../../assets/imgs/background.jpg');
+}
+
+.h1Color{
+
+    background-image: linear-gradient(to top,rgb(0, 0, 0) 0%, rgb(4, 104, 235) 40%);
+    color: rgb(230, 255, 247);
+    width:575px;
+    height: 45px;
+    font-size: 18px;
+    text-align: center;
+    line-height:45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke: 0.8px black; 
+}
+.div1{
+    background-image :url("/assets/imgs/challenges.jpg"); 
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-position: -90px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 250px;
+    margin: 5px;
+}
+.textdiv1{
+
+    line-height: 190px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 204, 108);
+    font-size: 25px;
+    -webkit-text-stroke: 1.2px black;    
+}
+.div2{
+    display: inline-block;
+    background-image :url("/assets/imgs/signal.jpg"); 
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-position: -100px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 250px;
+    margin: 5px;
+}
+
+.div3{
+    display: inline-block;
+    background-image :url("/assets/imgs/shop.jpg"); 
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-position: -100px;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 250px;
+    margin: 5px;
+}
+.divContainer{
+    padding:5px;
+    display: flex;
+    flex-flow: row wrap;
+    
+    
+}
