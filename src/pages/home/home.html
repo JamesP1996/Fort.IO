@@ -6,41 +6,41 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class ="homebg">
+<ion-content padding class="homebg">
   <h1>Fortnite Information App</h1>
   <h3>Click a Box Below or Read the Latest Fortnite News!</h3>
   <!--Div Container made to allign other div's horizontally-->
   <div class="divContainer">
- 
-    <!--Challenges Option-->    
-  <div id ="Challenges" (click)="chClick();" class="div1" tappable>
+
+    <!--Challenges Option-->
+    <div id="Challenges" (click)="chClick();" class="div1" tappable>
       <p class="textdiv1">Challenges
       </p>
     </div>
 
-    <!--Server Status Option-->  
-  <div id="serverMarker" (click)="servClick();" class="div2" tappable>
+    <!--Server Status Option-->
+    <div id="serverMarker" (click)="servClick();" class="div2" tappable>
       <p class="textdiv1">Server Status
       </p>
     </div>
 
-     <!--Item Store Option-->  
-   <div id="itemStore" class="div3" (click)="ItemClicked()">
+    <!--Item Store Option-->
+    <div id="itemStore" class="div3" (click)="ItemClicked()">
       <p class="textdiv1">Item Store </p>
     </div>
 
 
-</div>
+  </div>
 
-<h1>Fortnite News!</h1>
-      <ion-list>
-        <ion-item *ngFor="let na of newsArray">
-           <h2>{{na.title}}</h2> 
-           <p>{{na.body}}</p> 
-           <img height="250px" width="250px" src="{{na.image}}" alt="Image could not be retrieved from Json Server" />
-           <p>{{na.meta.adSpace}}</p>
-          </ion-item>
-        </ion-list>
+  <!--Adding a News Section and Grabbing Data from the News Provider-->
+  <h1>Fortnite News!</h1>
+  <ion-list>
+    <ion-item *ngFor="let na of newsArray">
+      <h2>{{na.title}}</h2>
+      <p>{{na.body}}</p>
+      <img height="250px" width="250px" src="{{na.image}}" alt="Image could not be retrieved from Json Server" />
+      <p>{{na.meta.adSpace}}</p>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
-

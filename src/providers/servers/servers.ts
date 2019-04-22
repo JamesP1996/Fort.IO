@@ -14,6 +14,7 @@ export class ServersProvider {
   constructor(public http: HttpClient) {
     console.log('Hello ServersProvider Provider');
   }
+  //Get Server Status from Fortnite API
   getServer() : Observable<any>{
     return this.http.get('https://fortnite-public-api.theapinetwork.com/prod09/status/fortnite_server_status');
     

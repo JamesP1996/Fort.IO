@@ -15,6 +15,7 @@ export class ItemProvider {
     console.log('Hello ItemProvider Provider');
   }
 
+  //Get data from Fortnite Api Current Item Store
   getItems() : Observable<any>{
     return this.http.get('https://fortnite-public-api.theapinetwork.com/prod09/store/get?language=en');
 

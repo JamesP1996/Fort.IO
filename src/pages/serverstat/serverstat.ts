@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ServersProvider} from '../../providers/servers/servers';
+import { ServersProvider } from '../../providers/servers/servers';
 
 /**
  * Generated class for the ServerstatPage page.
@@ -20,32 +20,24 @@ export class ServerstatPage {
   serverArray2: any[] = [];
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private sp : ServersProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private sp: ServersProvider) {
   }
 
-  
 
+  // Grab Server Status with use of Server Provider
   ionViewDidLoad() {
-    this.sp.getServer().subscribe(data =>
-      {
+    this.sp.getServer().subscribe(data => {
       this.serverArray = data.status;
-      
-      });
 
-      this.sp.getServer().subscribe(data =>
-        {
-        this.serverArray2 = data.time.duration.formated;
-        
-        
-        });
-  }
+    });
 
-  serverstat(){
-    this.sp.getServer().subscribe(data =>
-      {
+    // Grab Server Uptime with use of Server Provider
+    this.sp.getServer().subscribe(data => {
       this.serverArray2 = data.time.duration.formated;
-      
-      
-      });
+
+
+    });
   }
+
+
 }

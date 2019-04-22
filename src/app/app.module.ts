@@ -9,19 +9,19 @@ import { HomePage } from '../pages/home/home';
 
 import { ItemProvider } from '../providers/item/item';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
-import {ChallengesPage} from '../pages/challenges/challenges';
+import { ChallengesPage } from '../pages/challenges/challenges';
 
-import {ItemStorePage} from '../pages/item-store/item-store';
+import { ItemStorePage } from '../pages/item-store/item-store';
 
-import {ServerstatPage} from '../pages/serverstat/serverstat';
+import { ServerstatPage } from '../pages/serverstat/serverstat';
 
 import { ChallengeProvider } from '../providers/challenge/challenge';
 
 import { ServersProvider } from '../providers/servers/servers';
 import { NewsProvider } from '../providers/news/news';
-
+//Added Various Imports Above so that the App Functions as Intended.
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { NewsProvider } from '../providers/news/news';
     ItemStorePage,
     ServerstatPage,
     ChallengesPage
-   
+
   ],
   imports: [
     BrowserModule,
@@ -44,16 +44,16 @@ import { NewsProvider } from '../providers/news/news';
     ItemStorePage,
     ServerstatPage,
     ChallengesPage
-    
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     ItemProvider,
     ChallengeProvider,
     ServersProvider,
     NewsProvider
   ]
-})
-export class AppModule {}
+}) //Put the Various Imports in their reletive posistions <provider,entrycomponent,etc..>
+export class AppModule { }

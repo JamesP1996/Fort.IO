@@ -11,21 +11,24 @@
 </ion-header>
 
 <ion-content padding class="sBG">
-    <div class="divitem">
-      <h1>Fortnite Server Status</h1>
-      <p>Shows Current Status of Fortnite Servers</p>
-    </div>
-      
-    <ion-list>
-      <ion-item>
-         <h2 class="h2">The Fortnite Servers Are Currently {{serverArray}}</h2> 
-      </ion-item>
+  <!--Title and Page Description-->
+  <div class="divitem">
+    <h1>Fortnite Server Status</h1>
+    <p>Shows Current Status of Fortnite Servers</p>
+  </div>
 
-      <ion-item>
-          <h3>The Servers Have Been Up For <{{serverArray2}}> As of the Time You Clicked into this Page</h3>
+  <!--Grabbing the Current Status of Server-->
+  <ion-list>
+    <ion-item>
+      <h2 class="h2">The Fortnite Servers Are Currently {{serverArray}}</h2>
+    </ion-item>
 
-          
-        </ion-item>
+    <!--Grabbing the Server Uptime-->
+    <ion-item>
+      <h3>The Servers Have Been Up For <{{serverArray2}}> As of the Time You Clicked into this Page</h3>
 
-      </ion-list>
-  </ion-content>
+
+    </ion-item>
+
+  </ion-list>
+</ion-content>

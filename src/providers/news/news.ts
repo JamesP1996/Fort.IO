@@ -14,7 +14,7 @@ export class NewsProvider {
   constructor(public http: HttpClient) {
     console.log('Hello NewsProvider Provider');
   }
-
+  //Get Trending and Current News From Fortnite API
   getNews() : Observable<any>{
     return this.http.get('https://fortnite-public-api.theapinetwork.com/prod09/br_motd/get');
 

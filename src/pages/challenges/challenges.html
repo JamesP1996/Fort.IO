@@ -11,92 +11,104 @@
 </ion-header>
 
 <ion-content padding class="challengeBG">
-    <div class="divitem">
-        <h1>Challenges</h1>
-        <p>Show Current Challenges Available , Weeks that aren't showing are not out yet</p>
-      </div>
 
-      <h1>Week 1</h1>
-      <ion-list>
-        <ion-item *ngFor="let w1 of week1Array">
-           <h2>{{w1.challenge}}</h2> 
-           <h2>Difficulty : -{{w1.difficulty}}</h2> 
-          </ion-item>
-        </ion-list>
+  <!--A Title and Description a User Can Read-->
+  <div class="divitem">
+    <h1>Challenges</h1>
+    <p>Show Current Challenges Available , Weeks that aren't showing are not out yet</p>
+  </div>
 
-        <h1>Week 2</h1>
-      <ion-list>
-        <ion-item *ngFor="let w2 of week2Array">
-           <h2>{{w2.challenge}}</h2> 
-           <h2>Difficulty : -{{w2.difficulty}}</h2> 
-          </ion-item>
-        </ion-list>
+  <!--Grabbing Data For Week 1 From HTML Get JSON in the Provider-->
+  <h1>Week 1</h1>
+  <ion-list>
+    <ion-item *ngFor="let w1 of week1Array">
+      <h2>{{w1.challenge}}</h2>
+      <h2>Difficulty : -{{w1.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-        <h1>Week 3</h1>
-        <ion-list>
-          <ion-item *ngFor="let w3 of week3Array">
-             <h2>{{w3.challenge}}</h2> 
-             <h2>Difficulty : -{{w3.difficulty}}</h2> 
-            </ion-item>
-          </ion-list>
+  <!--Grabbing Data For Week 2 From HTML Get JSON in the Provider-->
+  <h1>Week 2</h1>
+  <ion-list>
+    <ion-item *ngFor="let w2 of week2Array">
+      <h2>{{w2.challenge}}</h2>
+      <h2>Difficulty : -{{w2.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-          <h1>Week 4</h1>
-          <ion-list>
-            <ion-item *ngFor="let w4 of week4Array">
-               <h2>{{w4.challenge}}</h2> 
-               <h2>Difficulty : -{{w4.difficulty}}</h2> 
-              </ion-item>
-            </ion-list>
+  <!--Grabbing Data For Week 3 From HTML Get JSON in the Provider-->
+  <h1>Week 3</h1>
+  <ion-list>
+    <ion-item *ngFor="let w3 of week3Array">
+      <h2>{{w3.challenge}}</h2>
+      <h2>Difficulty : -{{w3.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-            <h1>Week 5</h1>
-            <ion-list>
-              <ion-item *ngFor="let w5 of week5Array">
-                 <h2>{{w5.challenge}}</h2> 
-                 <h2>Difficulty : -{{w5.difficulty}}</h2> 
-                </ion-item>
-              </ion-list>
+  <!--Grabbing Data For Week 4 From HTML Get JSON in the Provider-->
+  <h1>Week 4</h1>
+  <ion-list>
+    <ion-item *ngFor="let w4 of week4Array">
+      <h2>{{w4.challenge}}</h2>
+      <h2>Difficulty : -{{w4.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-              <h1>Week 6</h1>
-              <ion-list>
-                <ion-item *ngFor="let w6 of week6Array">
-                   <h2>{{w6.challenge}}</h2> 
-                   <h2>Difficulty : -{{w6.difficulty}}</h2> 
-                  </ion-item>
-                </ion-list>
+  <!--Grabbing Data For Week 5 From HTML Get JSON in the Provider-->
+  <h1>Week 5</h1>
+  <ion-list>
+    <ion-item *ngFor="let w5 of week5Array">
+      <h2>{{w5.challenge}}</h2>
+      <h2>Difficulty : -{{w5.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-                <h1>Week 7</h1>
-              <ion-list>
-                <ion-item *ngFor="let w7 of week7Array">
-                   <h2>{{w7.challenge}}</h2> 
-                   <h2>Difficulty : -{{w7.difficulty}}</h2> 
-                  </ion-item>
-                </ion-list>
+  <!--Grabbing Data For Week 6 From HTML Get JSON in the Provider-->
+  <h1>Week 6</h1>
+  <ion-list>
+    <ion-item *ngFor="let w6 of week6Array">
+      <h2>{{w6.challenge}}</h2>
+      <h2>Difficulty : -{{w6.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-                <h1>Week 8</h1>
-              <ion-list>
-                <ion-item *ngFor="let w8 of week8Array">
-                   <h2>{{w8.challenge}}</h2> 
-                   <h2>Difficulty : -{{w8.difficulty}}</h2> 
-                  </ion-item>
-                </ion-list>
+  <!--Grabbing Data For Week 7 From HTML Get JSON in the Provider-->
+  <h1>Week 7</h1>
+  <ion-list>
+    <ion-item *ngFor="let w7 of week7Array">
+      <h2>{{w7.challenge}}</h2>
+      <h2>Difficulty : -{{w7.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-                <h1>Week 9</h1>
-              <ion-list>
-                <ion-item *ngFor="let w9 of week9Array">
-                   <h2>{{w9.challenge}}</h2> 
-                   <h2>Difficulty : -{{w9.difficulty}}</h2> 
-                  </ion-item>
-                </ion-list>
+  <!--Grabbing Data For Week 8 From HTML Get JSON in the Provider-->
+  <h1>Week 8</h1>
+  <ion-list>
+    <ion-item *ngFor="let w8 of week8Array">
+      <h2>{{w8.challenge}}</h2>
+      <h2>Difficulty : -{{w8.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
-                <h1>Week 10</h1>
-              <ion-list>
-                <ion-item *ngFor="let w10 of week10Array">
-                   <h2>{{w10.challenge}}</h2> 
-                   <h2>Difficulty : -{{w10.difficulty}}</h2> 
-                  </ion-item>
-                </ion-list>
+  <!--Grabbing Data For Week 9 From HTML Get JSON in the Provider-->
+  <h1>Week 9</h1>
+  <ion-list>
+    <ion-item *ngFor="let w9 of week9Array">
+      <h2>{{w9.challenge}}</h2>
+      <h2>Difficulty : -{{w9.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
+
+  <!--Grabbing Data For Week 10 From HTML Get JSON in the Provider-->
+  <h1>Week 10</h1>
+  <ion-list>
+    <ion-item *ngFor="let w10 of week10Array">
+      <h2>{{w10.challenge}}</h2>
+      <h2>Difficulty : -{{w10.difficulty}}</h2>
+    </ion-item>
+  </ion-list>
 
 
-                
+
 
 </ion-content>
