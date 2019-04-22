@@ -10,25 +10,30 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="sBG">
+<ion-content overflow-scroll="true" padding class="sBG">
   <!--Title and Page Description-->
   <div class="divitem">
     <h1>Fortnite Server Status</h1>
     <p>Shows Current Status of Fortnite Servers</p>
   </div>
 
+  <div class="list">
   <!--Grabbing the Current Status of Server-->
   <ion-list>
     <ion-item>
-      <h2 class="h2">The Fortnite Servers Are Currently {{serverArray}}</h2>
+      <h2 class="h2">The Fortnite Servers</h2>
+      <h2 class="h2">Are Currently {{serverArray}}</h2>
     </ion-item>
 
     <!--Grabbing the Server Uptime-->
+    
     <ion-item>
-      <h3>The Servers Have Been Up For <{{serverArray2}}> As of the Time You Clicked into this Page</h3>
-
+      <p>The Servers Have Been Up For</p>
+      <p><{{serverArray2}}></p>
+      <p>As of the Time You Clicked into this Page</p>
 
     </ion-item>
 
   </ion-list>
+</div>
 </ion-content>
